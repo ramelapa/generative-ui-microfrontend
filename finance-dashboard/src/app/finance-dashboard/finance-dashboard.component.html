@@ -1,0 +1,9 @@
+<div [ngClass]="uiConfig?.theme">
+    <h2>Finance Dashboard</h2>
+    
+    <!-- Loop through UI components dynamically -->
+    <div *ngFor="let widget of uiConfig?.components" class="widget">
+      {{ widget.type }}
+    </div>
+  </div>
+  
